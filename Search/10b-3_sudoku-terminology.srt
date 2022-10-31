@@ -1,0 +1,192 @@
+0
+00:00:00,000 --> 00:00:04,114
+
+
+1
+00:00:04,114 --> 00:00:06,030
+GREGOR KICZALES: In this video, I'm just going
+
+2
+00:00:06,030 --> 00:00:10,080
+to go through some of the basic terminology and rules in Sudoku.
+
+3
+00:00:10,080 --> 00:00:13,330
+So this is really kind of like a domain analysis for the problem
+
+4
+00:00:13,330 --> 00:00:15,940
+we're about to solve.
+
+5
+00:00:15,940 --> 00:00:19,960
+So first, Sudoku is played on a nine by nine board.
+
+6
+00:00:19,960 --> 00:00:23,710
+Because it's nine by nine, the board has 81 of what we're going to call,
+
+7
+00:00:23,710 --> 00:00:25,060
+squares.
+
+8
+00:00:25,060 --> 00:00:30,560
+In addition to the 81 squares, we say that the board has nine rows,
+
+9
+00:00:30,560 --> 00:00:33,380
+because it's a nine by nine board, nine columns,
+
+10
+00:00:33,380 --> 00:00:38,140
+because it's a nine by nine board, and it also has nine boxes.
+
+11
+00:00:38,140 --> 00:00:43,526
+Where the boxes are, are little three by three blocks of the whole board.
+
+12
+00:00:43,526 --> 00:00:46,970
+And so there's three boxes at the top, three boxes kind of in the middle,
+
+13
+00:00:46,970 --> 00:00:50,610
+and three boxes at the bottom.
+
+14
+00:00:50,610 --> 00:00:57,460
+So the rows, the columns, and the boxes together comprise what are called,
+
+15
+00:00:57,460 --> 00:00:59,050
+units.
+
+16
+00:00:59,050 --> 00:01:05,209
+There's 27 total units, because there's nine rows, nine columns, and nine
+
+17
+00:01:05,209 --> 00:01:06,880
+boxes.
+
+18
+00:01:06,880 --> 00:01:10,450
+And adding nine, nine, and nine gets 27.
+
+19
+00:01:10,450 --> 00:01:14,840
+So there's 27 total units, and now we have enough terminology
+
+20
+00:01:14,840 --> 00:01:18,560
+to concisely say the goal of the game.
+
+21
+00:01:18,560 --> 00:01:22,840
+The goal of the game is to fill every square with a natural number from one
+
+22
+00:01:22,840 --> 00:01:29,720
+to nine but making sure that there's not a duplicate number in any unit.
+
+23
+00:01:29,720 --> 00:01:32,452
+So there can't be a single row that has a duplicate number in it.
+
+24
+00:01:32,452 --> 00:01:35,160
+There can't be a single column that has a duplicate number in it.
+
+25
+00:01:35,160 --> 00:01:39,420
+And there can't be a single box that has a duplicate number it.
+
+26
+00:01:39,420 --> 00:01:42,190
+Because we have the term unit, we can say that more concisely
+
+27
+00:01:42,190 --> 00:01:47,930
+as there can't be a single unit that has a duplicate number in it.
+
+28
+00:01:47,930 --> 00:01:51,240
+So just to be clear, this is an illegal move.
+
+29
+00:01:51,240 --> 00:01:56,130
+You can't put a six in that third box in the first row,
+
+30
+00:01:56,130 --> 00:01:58,480
+because there's already a six in that row.
+
+31
+00:01:58,480 --> 00:02:01,290
+So that's an illegal move.
+
+32
+00:02:01,290 --> 00:02:03,450
+Here's another illegal move.
+
+33
+00:02:03,450 --> 00:02:08,509
+You can't put a one there, because there's already a one in that column.
+
+34
+00:02:08,509 --> 00:02:11,430
+So that's an illegal move.
+
+35
+00:02:11,430 --> 00:02:13,770
+And here's another illegal move.
+
+36
+00:02:13,770 --> 00:02:15,320
+You can't put a three there.
+
+37
+00:02:15,320 --> 00:02:21,070
+You can't put the red three in, because there's already a three in that box.
+
+38
+00:02:21,070 --> 00:02:24,430
+That's an illegal move.
+
+39
+00:02:24,430 --> 00:02:29,770
+Again, the goal of the game is to fill in every square
+
+40
+00:02:29,770 --> 00:02:34,920
+with a natural from one to nine inclusive but making sure that there's
+
+41
+00:02:34,920 --> 00:02:39,780
+not a duplicate number in any unit.
+
+42
+00:02:39,780 --> 00:02:44,750
+So that's the quick terminology of Sudoku and quick summary of the rules.
+
+43
+00:02:44,750 --> 00:02:46,650
+Again, if you've never seen Sudoku before,
+
+44
+00:02:46,650 --> 00:02:51,110
+and you'd like a bit more detailed introduction to the rules of the game,
+
+45
+00:02:51,110 --> 00:02:56,150
+just do a web search and find one of the many Sudoku sites.
+
+46
+00:02:56,150 --> 00:03:00,760
+And you could play one or two quick games before picking up the next video.
+
+47
+00:03:00,760 --> 00:03:01,602
+
+
